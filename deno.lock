@@ -1,11 +1,9 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:solid-devtools@~0.34.3": "0.34.4_solid-js@1.9.10__seroval@1.3.2_vite@7.2.4__picomatch@4.0.3_@babel+core@7.28.5",
-    "npm:solid-js@^1.9.5": "1.9.10_seroval@1.3.2",
-    "npm:typescript@^5.7.2": "5.9.3",
-    "npm:vite-plugin-solid@^2.11.8": "2.11.10_solid-js@1.9.10__seroval@1.3.2_vite@7.2.4__picomatch@4.0.3_@babel+core@7.28.5",
-    "npm:vite@^7.1.4": "7.2.4_picomatch@4.0.3"
+    "npm:solid-js@^1.9.10": "1.9.10_seroval@1.3.2",
+    "npm:vite-plugin-solid@^2.11.10": "2.11.10_solid-js@1.9.10__seroval@1.3.2_vite@7.2.4__picomatch@4.0.3_@babel+core@7.28.5",
+    "npm:vite@^7.2.4": "7.2.4_picomatch@4.0.3"
   },
   "npm": {
     "@babel/code-frame@7.27.1": {
@@ -112,13 +110,6 @@
     },
     "@babel/plugin-syntax-jsx@7.27.1_@babel+core@7.28.5": {
       "integrity": "sha512-y8YTNIeKoyhGd9O0Jiyzyyqk8gdjnumGTQPsz0xOZOQ2RmkVJeZ1vmmfIvFEKqucBG6axJGBZDE/7iI5suUI/w==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/helper-plugin-utils"
-      ]
-    },
-    "@babel/plugin-syntax-typescript@7.27.1_@babel+core@7.28.5": {
-      "integrity": "sha512-xfYCBMxveHrRMnAWl1ZlPXOZjzkN82THFvLhQhFXFt81Z5HnN+EtUkZhv/zcKpmT3fzmWZB0ywiBrbC3vogbwQ==",
       "dependencies": [
         "@babel/core",
         "@babel/helper-plugin-utils"
@@ -308,9 +299,6 @@
         "@jridgewell/sourcemap-codec"
       ]
     },
-    "@nothing-but/utils@0.17.0": {
-      "integrity": "sha512-TuCHcHLOqDL0SnaAxACfuRHBNRgNJcNn9X0GiH5H3YSDBVquCr3qEIG3FOQAuMyZCbu9w8nk2CHhOsn7IvhIwQ=="
-    },
     "@rollup/rollup-android-arm-eabi@4.53.3": {
       "integrity": "sha512-mRSi+4cBjrRLoaal2PnqH82Wqyb+d3HsPUN/W+WslCXsZsyHa9ZeQQX/pQsZaVIWDkPcpV6jJ+3KLbTbgnwv8w==",
       "os": ["android"],
@@ -420,123 +408,6 @@
       "integrity": "sha512-UhTd8u31dXadv0MopwGgNOBpUVROFKWVQgAg5N1ESyCz8AuBcMqm4AuTjrwgQKGDfoFuz02EuMRHQIw/frmYKQ==",
       "os": ["win32"],
       "cpu": ["x64"]
-    },
-    "@solid-devtools/debugger@0.28.1_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-6qIUI6VYkXoRnL8oF5bvh2KgH71qlJ18hNw/mwSyY6v48eb80ZR48/5PDXufUa3q+MBSuYa1uqTMwLewpay9eg==",
-      "dependencies": [
-        "@nothing-but/utils",
-        "@solid-devtools/shared",
-        "@solid-primitives/bounds",
-        "@solid-primitives/event-listener",
-        "@solid-primitives/keyboard",
-        "@solid-primitives/rootless",
-        "@solid-primitives/scheduled",
-        "@solid-primitives/static-store",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-devtools/shared@0.20.0_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-o5TACmUOQsxpzpOKCjbQqGk8wL8PMi+frXG9WNu4Lh3PQVUB6hs95Kl/S8xc++zwcMguUKZJn8h5URUiMOca6Q==",
-      "dependencies": [
-        "@nothing-but/utils",
-        "@solid-primitives/event-listener",
-        "@solid-primitives/media",
-        "@solid-primitives/refs",
-        "@solid-primitives/rootless",
-        "@solid-primitives/scheduled",
-        "@solid-primitives/static-store",
-        "@solid-primitives/styles",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/bounds@0.1.3_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-UbiyKMdSPmtijcEDnYLQL3zzaejpwWDAJJ4Gt5P0hgVs6A72piov0GyNw7V2SroH7NZFwxlYS22YmOr8A5xc1Q==",
-      "dependencies": [
-        "@solid-primitives/event-listener",
-        "@solid-primitives/resize-observer",
-        "@solid-primitives/static-store",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/event-listener@2.4.3_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-h4VqkYFv6Gf+L7SQj+Y6puigL/5DIi7x5q07VZET7AWcS+9/G3WfIE9WheniHWJs51OEkRB43w6lDys5YeFceg==",
-      "dependencies": [
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/keyboard@1.3.3_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-9dQHTTgLBqyAI7aavtO+HnpTVJgWQA1ghBSrmLtMu1SMxLPDuLfuNr+Tk5udb4AL4Ojg7h9JrKOGEEDqsJXWJA==",
-      "dependencies": [
-        "@solid-primitives/event-listener",
-        "@solid-primitives/rootless",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/media@2.3.3_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-hQ4hLOGvfbugQi5Eu1BFWAIJGIAzztq9x0h02xgBGl2l0Jaa3h7tg6bz5tV1NSuNYVGio4rPoa7zVQQLkkx9dA==",
-      "dependencies": [
-        "@solid-primitives/event-listener",
-        "@solid-primitives/rootless",
-        "@solid-primitives/static-store",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/refs@1.1.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-K7tf2thy7L+YJjdqXspXOg5xvNEOH8tgEWsp0+1mQk3obHBRD6hEjYZk7p7FlJphSZImS35je3UfmWuD7MhDfg==",
-      "dependencies": [
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/resize-observer@2.1.3_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-zBLje5E06TgOg93S7rGPldmhDnouNGhvfZVKOp+oG2XU8snA+GoCSSCz1M+jpNAg5Ek2EakU5UVQqL152WmdXQ==",
-      "dependencies": [
-        "@solid-primitives/event-listener",
-        "@solid-primitives/rootless",
-        "@solid-primitives/static-store",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/rootless@1.5.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-9HULb0QAzL2r47CCad0M+NKFtQ+LrGGNHZfteX/ThdGvKIg2o2GYhBooZubTCd/RTu2l2+Nw4s+dEfiDGvdrrQ==",
-      "dependencies": [
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/scheduled@1.5.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-/j2igE0xyNaHhj6kMfcUQn5rAVSTLbAX+CDEBm25hSNBmNiHLu2lM7Usj2kJJ5j36D67bE8wR1hBNA8hjtvsQA==",
-      "dependencies": [
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/static-store@0.1.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-ReK+5O38lJ7fT+L6mUFvUr6igFwHBESZF+2Ug842s7fvlVeBdIVEdTCErygff6w7uR6+jrr7J8jQo+cYrEq4Iw==",
-      "dependencies": [
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/styles@0.1.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-7iX5K+J5b1PRrbgw3Ki92uvU2LgQ0Kd/QMsrAZxDg5dpUBwMyTijZkA3bbs1ikZsT1oQhS41bTyKbjrXeU0Awg==",
-      "dependencies": [
-        "@solid-primitives/rootless",
-        "@solid-primitives/utils",
-        "solid-js"
-      ]
-    },
-    "@solid-primitives/utils@6.3.2_solid-js@1.9.10__seroval@1.3.2": {
-      "integrity": "sha512-hZ/M/qr25QOCcwDPOHtGjxTD8w2mNyVAYvcfgwzBHq2RwNqHNdDNsMZYap20+ruRwW4A3Cdkczyoz0TSxLCAPQ==",
-      "dependencies": [
-        "solid-js"
-      ]
     },
     "@types/babel__core@7.20.5": {
       "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
@@ -785,21 +656,6 @@
     "seroval@1.3.2": {
       "integrity": "sha512-RbcPH1n5cfwKrru7v7+zrZvjLurgHhGyso3HTyGtRivGWgYjbOmGuivCQaORNELjNONoK35nj28EoWul9sb1zQ=="
     },
-    "solid-devtools@0.34.4_solid-js@1.9.10__seroval@1.3.2_vite@7.2.4__picomatch@4.0.3_@babel+core@7.28.5": {
-      "integrity": "sha512-/s/pPTLvTkuXGZhLfsuvp7ge/cdpEwrUPoRwoJPYgz74GTUSb5Ozi2V6Z6HkO0ILT7hXB04j16HbH1aaP5VFOA==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/plugin-syntax-typescript",
-        "@babel/types",
-        "@solid-devtools/debugger",
-        "@solid-devtools/shared",
-        "solid-js",
-        "vite"
-      ],
-      "optionalPeers": [
-        "vite"
-      ]
-    },
     "solid-js@1.9.10_seroval@1.3.2": {
       "integrity": "sha512-Coz956cos/EPDlhs6+jsdTxKuJDPT7B5SVIWgABwROyxjY7Xbr8wkzD68Et+NxnV7DLJ3nJdAC2r9InuV/4Jew==",
       "dependencies": [
@@ -826,10 +682,6 @@
         "fdir",
         "picomatch"
       ]
-    },
-    "typescript@5.9.3": {
-      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
-      "bin": true
     },
     "update-browserslist-db@1.1.4_browserslist@4.28.0": {
       "integrity": "sha512-q0SPT4xyU84saUX+tomz1WLkxUbuaJnR1xWt17M7fJtEJigJeWUNGUqrauFXsHnqev9y9JTRGwk13tFBuKby4A==",
@@ -884,11 +736,9 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:solid-devtools@~0.34.3",
-        "npm:solid-js@^1.9.5",
-        "npm:typescript@^5.7.2",
-        "npm:vite-plugin-solid@^2.11.8",
-        "npm:vite@^7.1.4"
+        "npm:solid-js@^1.9.10",
+        "npm:vite-plugin-solid@^2.11.10",
+        "npm:vite@^7.2.4"
       ]
     }
   }

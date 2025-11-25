@@ -1,22 +1,18 @@
 {
-  "name": "vite-template-solid",
+  "name": "solid-js-course",
+  "private": true,
   "version": "0.0.0",
-  "description": "",
   "type": "module",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "solid-devtools": "^0.34.3",
-    "typescript": "^5.7.2",
-    "vite": "^7.1.4",
-    "vite-plugin-solid": "^2.11.8"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.9.5"
+    "solid-js": "^1.9.10"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4",
+    "vite-plugin-solid": "^2.11.10"
   }
 }
