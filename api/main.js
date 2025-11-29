@@ -1,4 +1,5 @@
 import { Hono } from "@hono/hono";
+import { serveStatic } from "@hono/hono/deno";
 import data from "./data.json" with { type: "json" };
 
 const app = new Hono();
@@ -27,6 +28,13 @@ app.get("/api/dinosaurs/:dinosaur", (c) => {
   } else {
     return c.notFound();
   }
+});
+
+// Обслуживание статических файлов из папки 'dist'
+app.use("/*", serveStatic({ root: "./dist" }));
+// Fallback для SPA-роутинга - все остальные запросы возвращают index.html
+app.get("*", (c) => {
+  return c.html(Deno.readTextFileSync("./dist/index.html"));
 });
 
 Deno.serve(app.fetch);
