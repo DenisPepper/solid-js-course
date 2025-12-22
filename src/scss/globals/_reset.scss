@@ -1,6 +1,7 @@
 /*
 The underscore indicates that the file is only a partial, so Sass will not compile it into its own CSS file.
 */
+@use "../util";
 
 html {
   box-sizing: border-box;
@@ -14,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: util.$font;
   color: var(--text-color);
   background-color: var(--background-color);
 }
