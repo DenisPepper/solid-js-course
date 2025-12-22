@@ -1,6 +1,6 @@
 import { render } from "solid-js/web";
 import App from "./App.jsx";
-import "./index.css";
+import "./scss/style.scss";
 
 const wrapper = document.getElementById("root");
 
